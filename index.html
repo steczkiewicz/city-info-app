@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <input
+          type="input"
+          class="form__field"
+          placeholder="City"
+          name="city"
+          id="city"
+          autocomplete="off"
+        />
+        <input
+          type="date"
+          class="form__field"
+          name="from"
+          id="from"
+        />
+        <input
+          type="date"
+          class="form__field"
+          name="to"
+          id="to"
+        />
+
+        <div class="buttons">
+          <button type="button" id="submit">Submit</button>
+        </div>
+      </form>
+      <div class="info">
+        <p>City:</p>
+        <p id="name"></p>
+        <p>Country:</p>
+        <p id="country"></p>
+        <p>Local time:</p>
+        <p id="time"></p>
+        <p>Temperature: </p>
+        <p id="temperature"></p>
+        <p>Max temperature today: </p>
+        <p id="max_temperature"></p>
+        <p>Min temperature today:</p>
+        <p id="min_temperature"></p>
+        <p>Wind: </p>
+        <p id="wind"></p>
+        <p>Currency: </p>
+        <p id="currency"></p>
+        <p id="curr_info">USD/Currency ratio:</p>
+        <p id="currency_rate"></p>
+        <p id="curr_info_max">USD/Currency max ratio:</p>
+        <p id="currency_rate_max"></p>
+        <p id="curr_info_min">USD/Currency min ratio:</p>
+        <p id="currency_rate_min"></p>
+      </div>
+      <img src="" alt="">
+    </div>
+  </body>
+</html>

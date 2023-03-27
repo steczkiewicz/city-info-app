@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Century Gothic", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(48, 48, 48);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 97vh;
+  margin-top: 3vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* text inputs */
+.form__field {
+  font-weight: 400;
+  font-family: inherit;
+  border: 0;
+  border-bottom: 1.5px solid white;
+  outline: 0;
+  font-size: 1rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  margin-top: 30px;
+  width: 15vw;
+}
+
+.form__field:focus,
+.form__field:not(:placeholder-shown) {
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form__field::placeholder {
+  color: white;
+}
+
+.form__field:focus::placeholder {
+  opacity: 0;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+}
+
+
+/* Submit Button */
+#submit {
+  all: unset;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 80px;
+  height: 30px;
+  font-weight: 400;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+#submit:hover {
+  cursor: pointer;
+  border: 2px solid #11998e;
+  background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 25vw;
+  row-gap: 10px;
+  margin-top: 50px;
+}
+
+.info p {
+  color: white;
+  font-size: 20px;
+  margin: 0;
+}
+
+.info p:nth-child(odd) {
+  justify-self: start;
+}
+
+.info p:nth-child(even) {
+  justify-self: end;
+}
+
+img {
+  margin-top: 20px;
+  width: 100px;
+  height: auto;
+}
